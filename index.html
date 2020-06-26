@@ -41,7 +41,8 @@
   <div class="content">
     <figure style="font-style: italic; font-weight: normal; margin: 0px; padding: 0px; border: 0px">
      <a href="./files/front_page_image">
-        <img src="./files/front_page_image" width="100%" alt="teaser" style="margin-bottom:10px">
+        <!-- <img src="./files/front_page_image" width="100%" alt="teaser" style="margin-bottom:10px"> -->
+	<img src="./files/overview_car.png" width="100%" alt="teaser" style="margin-bottom:10px">
       </a>
       <figcaption> (Left) We use two self-supervised losses to learn scene flow on large unlabeled datasets. The "nearest neighbor loss" penalizes the distance between the predicted point cloud <font color="green">(green)</font> and each predicted point's nearest neighbor in the second point cloud <font color="red">(red)</font>.  To avoid degenerate solutions, we estimate the flow between these predicted points <font color="green">(green)</font> in the reverse direction back to the original point cloud <font color="blue">(blue)</font> to form a cycle. The new predicted points from the cycle <font color="magenta">(purple)</font> should align with the original points <font color="blue">(blue)</font> and the distance between these two set of points, forms our second self-supervised loss: "cycle consistency". (Right) For the NuScenes dataset, scene flow is computed between point cloud at time 't' <font color="red">(red)</font> and 't+1' <font color = "green">(green)</font> and the transformed cloud in shown in <font color="blue">(blue)</font>
       </figcaption>
